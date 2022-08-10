@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <table>
+        <tr>
+            <th>PK</th>
+            <th>Year</th>
+            <th>Brand</th>
+        </tr>
+        {% for item in cars %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.year}}</td>
+            <td>{{item.brand}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
